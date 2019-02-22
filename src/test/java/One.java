@@ -13,7 +13,7 @@ public class One {
 
 
 
-
+String g = "o";
         WebDriver driver;
 
         @BeforeClass
