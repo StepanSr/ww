@@ -22,7 +22,10 @@ public class One {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
-
+@BeforeMethod
+public void met(){
+    System.out.println("add beforemethod");
+}
         @Test
         public void automationFrame() throws InterruptedException {
             driver.get("http://automationpractice.com");
