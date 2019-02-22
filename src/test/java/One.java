@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -33,8 +34,13 @@ public class One {
             System.out.println(ele.getText());
             //driver.switchTo().defaultContent();
             System.out.println(driver.getTitle());
+            System.out.println("todo good");
         }
-        //ghds
+        @AfterClass
+    public void close(){
+            driver.quit();
+        }
+
     }
 
 
