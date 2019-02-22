@@ -41,6 +41,7 @@ public void met(){
         }
         @AfterClass
     public void close(){
+            System.out.println("change in cat");
             driver.quit();
         }
 
